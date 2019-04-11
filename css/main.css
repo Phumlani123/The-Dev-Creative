@@ -1,0 +1,175 @@
+
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    height: 80px;
+}
+
+
+.solid {
+    background-color: #000;
+    transition: background-color 1s ease 0s;
+
+
+}
+
+.solid .navbar-brand {
+    color: #fff;
+    transition: color 1s ease 0s;
+}
+
+.bg-image {
+    background-color: #490D40;
+    background: url('../img/home-banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -80px;
+
+}
+
+.bg-image .heading {
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.pt-100 {
+    padding-top: 100px !important;
+}
+.pb-100 {
+    padding-bottom: 100px !important;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: #222;
+    padding: 10px 20px;
+    border: 2px solid #222;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: .2s background-color ease;
+    -o-transition: .2s background-color ease;
+    transition: .2s background-color ease;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.offering {
+    background-color: #252525;
+    color: #fff;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+
+.service-div span {
+    background-color: #ff9234;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.offering h2 {
+
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+
+
+.service-div h4 {
+
+    font-size: 1.5rem;
+    margin: 3rem 0 1rem 0;
+}
+
+.data-count{
+    /* The image used */
+    background-image: url("../img/parallax-bg.jpg");
+
+    /* Set a specific height */
+    min-height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.gallery {
+
+    text-align: center;
+}
+
+.gallery .item {
+     overflow: hidden;
+     background: gray;
+     opacity: 1;
+ }
+
+.gallery .item .img {
+    transition: 0.8s ease-in-out;
+}
+
+.gallery .item .info {
+    position: relative;
+    display: inline-block;
+}
+.gallery .item .description {
+
+    position: absolute;
+    display: grid;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.39)) ;
+}
+
+@media (min-width: 576px){
+    .gallery .item .description {
+         opacity: 0;
+     }
+
+    .gallery .item .description:hover {
+        opacity: 1;
+    }
+
+    .gallery .zoom-on-hover:hover img{
+
+        transform: scale(1.3);
+        opacity: 0.7;
+        transition: 0.8s ease-in-out;
+
+    }
+}
+
+
+.gallery img {
+
+    width: 100%;
+    height: 100%;
+}
+
