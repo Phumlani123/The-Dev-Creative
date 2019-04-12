@@ -1,5 +1,22 @@
 
 
+h2 {
+
+    font-size: 2.5rem!important;
+    text-transform: uppercase;
+
+}
+
+a {
+    color: #fff!important;
+    text-decoration: none;
+    background-color: transparent;
+}
+p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
 .navbar {
     position: absolute;
     width: 100%;
@@ -13,6 +30,50 @@
     height: 80px;
 }
 
+nav {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:active:before {
+    transition: all .5s;
+}
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+nav.stroke ul li a:after,
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgba(255, 255, 255, 0.75);
+    height: 1px;
+}
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+nav.stroke ul li a:active:after {
+    width: 100%;
+}
+nav .navbar-brand {
+
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
 
 .solid {
     background-color: #000;
@@ -27,19 +88,50 @@
 }
 
 .bg-image {
-    background-color: #490D40;
+
     background: url('../img/home-banner-bg.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     margin-top: -80px;
 
 }
+.layer {
+    background-color: rgba(0, 0, 0, 0.3);
 
-.bg-image .heading {
-    color: white;
-    text-align: center;
-    padding-top: 200px;
+
+    height: 100vh;
 }
+
+
+.bg-image .heading-section {
+    top: 40%;
+    position: absolute;
+    color: #fff;
+    z-index: 11;
+
+
+}
+
+.bg-image .heading-section .heading {
+    font-size: 80px;
+    font-weight: 700;
+}
+.bg-image .heading-section p {
+    font-size: 24px;
+
+}
+
+.bg-image .heading-section a {
+    font-size: 24px;
+    color: #fff;
+
+
+}
+
+.arrow a:hover {
+    text-decoration: none;
+}
+
 
 .pt-100 {
     padding-top: 100px !important;
@@ -51,6 +143,33 @@
 .about-img img {
     width: 100%;
 }
+ .about-content .social-icons {
+    margin-top: 30px;
+}
+
+.about-content .about-button {
+     margin-top: 40px;
+ }
+
+
+
+section.about .about-content .social-icons a {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #222;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #222;
+    width: 30px;
+    height: 30px;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+}
+
 
 .main-btn {
     display: inline-block;
@@ -68,17 +187,47 @@
 }
 
 .offering {
-    background-color: #252525;
-    color: #fff;
+    background-color: #f2f2f2;
+
     text-align: center;
     text-align: -moz-center;
     text-align: -webkit-center;
 }
 
 .service-div span {
-    background-color: #ff9234;
-    padding: 20px;
+    color: #222;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    line-height: 78px;
+    font-size: 30px;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+
+}
+.service-div:hover span {
+    color: #222;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    line-height: 78px;
+    font-size: 30px;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+    -webkit-box-shadow: 0px 0px 62px -21px rgba(168,168,168,1);
+    -moz-box-shadow: 0px 0px 62px -21px rgba(168,168,168,1);
+    box-shadow: 0px 0px 62px -21px rgba(168,168,168,1);
+
 }
 
 .offering h2 {
@@ -93,6 +242,7 @@
 
     font-size: 1.5rem;
     margin: 3rem 0 1rem 0;
+    text-transform: uppercase;
 }
 
 .data-count{
@@ -121,7 +271,7 @@
      opacity: 1;
  }
 
-.gallery .item .img {
+.gallery .item .image-hov {
     transition: 0.8s ease-in-out;
 }
 
@@ -171,5 +321,43 @@
 
     width: 100%;
     height: 100%;
+}
+
+#baguetteBox-overlay .full-image img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+
+    box-shadow: none!important;
+    padding: 5% 0;
+}
+
+.baguetteBox-button:focus {
+    outline-color: transparent;
+}
+
+.blog {
+    text-align: center;
+    background-color: #f2f2f2;
+
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    background-color: #252525;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer hr {
+
+
+
 }
 
